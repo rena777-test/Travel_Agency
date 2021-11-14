@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroDataTask1</title>
+    <!-- Задание 1
+Выучить основные понятия, рассмотренные на уроке. 
+Задание 2
+Создайте страницу ТурФирмы. Основные элементы – header, footer, section, nav.
+ В элементе section – минимум 4 блока с ТОПовыми отелями. В блоке есть фото
+  и информация про отель. Снизу под описанием – кнопка – «Посмотреть на карте».
+   При нажатии на кнопку – появляется карта с расположением данного отеля.
+  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="task1.js"></script>
+
+</head>
+
+<body>
+    <header itemscope itemtype="https://schema.org/Organization">
+        <h1 itemprop="name">Sunsweet</h1>
+        <div><img id="logo-sun" src="imgs/sun.jpg" alt=""></div>
+    </header>
+    <nav>
+        <a href="">Главная</a>
+        <a href="">Горящие туры Харькова</a>
+        <a href="">Страны</a>
+        <a href="">Отзывы</a>
+        <a href="">Контакты</a>
+    </nav>
+    <section>
+        <div id="hotel-one">
+           <div class="background">
+            <h2>Simena</h2>
+            <p class="image-size"><img itemprop="image" src="imgs/simena-hotel__.jpg" alt="hotel photo"></p>
+           </div>
+            <span itemprop="inovator">Markus Bacheno</span><br>
+            <span itemprop="company">Simena</span><br>
+            <span itemprop="year">1999</span><br>
+            <article itemprop="description">
+                Отель был открыт в 1999 году, последний ремонт проводился в 2014 году (в коттеджном городке в 2019
+                году).
+                Общая площадь территории составляет 165 000 кв.м.
+                <span id="read-more-one" hidden>
+                    Состоит из основного 4-этажного здания Simena Hotel (есть 2 лифта) и комплекса 1-2-этажных коттеджей
+                    и
+                    вилл Simena Holiday Village
+                    (курсирует шаттл между главным зданием и коттеджами, каждые 15 минут).
+                    К оплате принимаются банковские карты Visa, Masterсard, Amex.
+                    Один 4-х этажный корпус: 107 стандартных номеров (максимально 2+1 человека,
+                    32 квадратных метра); 12 двухкомнатных делюкс сьюитов (холл, спальня с дверью,
+                    ванна с гидромассажем, 2 телевизора, 2 мини-бара, максимально 3+1 человека,
+                    64 квадратных метра).
+                    <!--     Питание:
+                    Отель предлагает питание по системе «ультра все включено» (Ultra All Inclusive)
+                    (07:00-01:00). Завтрак (07:00-10:00), поздний завтрак (10:00-11:00),
+                    обед (12:30-14:30) и ужин (19:00-21:30) – шведский стол. Свежевыжатые соки (завтрак)
+                    и мороженое (15:30-17:00) – бесплатно. Некоторые алкогольные напитки импортного
+                    производства, алкогольные напитки местного производства, безалкогольные напитки,
+                    прохладительные напитки, чай и кофе – бесплатно.
+                    К оплате принимаются кредитные карты: Visa, Master, Diners, Euro.
+                    Размещение с животными - нет. -->
+                </span>
+            </article>
+            <div><input data-toggle-id="read-more-one" class="btn-read-more" type="text" placeholder="Узнать больше">
+            </div>
+            <button data-toggle-id="btn-one">1.Посмотреть на карте</button>
+            <div id="btn-one" hidden class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.1365861333184!2d30.55611711380242!3d36.550819489400226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b671fa9c3efb%3A0x479f5b3c213e23fc!2sSimena%20Hotel!5e0!3m2!1sru!2sua!4v1636031230906!5m2!1sru!2sua"
+                    width="250" height="150" style="border:2px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+        <!-- End hotel-one -->
+
+
+        <div id="hotel-two">
+           <div class="background">
+            <h2>Rixos Premium Tekirova</h2>
+            <p class="image-size"><img itemprop="image" src="imgs/rixos.jpg" alt="hotel photo"></p>
+           </div>
+            <span itemprop="inovator">Ilona Bronevitkaya</span><br>
+            <span itemprop="company">Rixos Premium Tekirova</span><br>
+            <span itemprop="year">2000</span><br>
+            <article itemprop="description">
+                С 2014 года отель приобрел статус премиум-класса. В 2014 году прошла реновация всех номеров и всей
+                инфраструктуры (основной ресторан, a la carte рестораны, мини-клуб, лобби и др.),
+                построены новые виллы – Executive Villa и Superior Villa.
+                <span id="read-more-two" hidden>
+                    <br>
+                    <!-- A в 2017 году прошла
+                    реновация Стандартного блока (было сменено ковровое покрытие, телевизоры, кровати,
+                    текстиль). Также в главном ресторане Turquosie построена терасса, в 2020 году прошла
+                    реновация Fitness Center. --> Один из популярных отелей для семейных пар и отдыха с детьми.
+                    Разнообразные номера, возможность размещения больших семей с детьми, водные горки,
+                    бассейны, увлекательные анимационные программы. Разнообразное и качественное питание,
+                    6 ресторанов a la carte с тематическими меню. Рекомендуем для семейных пар и отдыха с детьми.
+                    Хорошее расположение для гостей
+                    Этот шикарный отель с обслуживанием по системе "все включено"
+                    расположен на побережье
+                    Средиземного моря, в 8 км от древнеримского города Фаселис.
+                    Из отеля открывается прекрасный вид на море.
+                </span>
+            </article>
+            <div><input data-toggle-id="read-more-two" class="btn-read-more" type="text" placeholder="Узнать больше">
+            </div>
+            <button data-toggle-id="btn-two">2.Посмотреть на карте</button>
+            <div id="btn-two" hidden class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.857152332483!2d30.534174014863417!3d36.509310180009514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b5829cb4c0d7%3A0x3a27924e80379d75!2z0J7RgtC10LvRjCBSaXhvcyBQcmVtaXVtIFRla2lyb3Zh!5e0!3m2!1sru!2sua!4v1636031695362!5m2!1sru!2sua"
+                    width="250" height="150" style="border:2px;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+
+        <!-- End hotel-two -->
+
+
+        <div id="hotel-three">
+            <div class="background">
+                <h2>Grand Park Kemer Hotel</h2>
+                <p class="image-size"><img itemprop="image" src="imgs/park.jpg" alt="hotel photo"></p>
+            </div>
+            <span itemprop="inovator">Vinchenso Plaetto</span><br>
+            <span itemprop="company">Grand Park Kemer Hotel</span><br>
+            <span itemprop="year">2003</span><br>
+            <article itemprop="description">
+                Отель Grand Park Kemer - Ultra расположен прямо на набережной. Отель All
+                Inclusive предлагает роскошный спа-центр и открытый бассейн с видом на
+                залив Антальи.
+                <span id="read-more-three" hidden>
+                    Полностью отремонтированные в апреле 2019 года номера оформлены в
+                    спокойных тонах. Большие окна обеспечивают хорошее естественное освещение.
+                    В каждом номере есть меблированный балкон с видом на Средиземное море или лес.
+                    Гости отеля Grand Park Kemer могут искупаться в освежающем бассейне.
+                    Гости могут поплавать в крытом бассейне или заказать расслабляющий
+                    массаж. В отеле Grand Park Kemer - Ultra. Кроме того, в распоряжении
+                    гостей турецкая баня, сауна и салон красоты. В отеле также работает
+                    мини-клуб.
+                    В отеле Grand Park Kemer - Ultra. Отель All Inclusive расположен в 28 км от
+                    аэропорта Анталии.
+                    Парам особенно нравится расположение
+                </span>
+            </article>
+            <div><input data-toggle-id="read-more-three" class="btn-read-more" type="text" placeholder="Узнать больше">
+            </div>
+            <button data-toggle-id="btn-three">3.Посмотреть на карте</button>
+            <div id="btn-three" hidden class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.472457741425!2d30.568095714869397!3d36.687183179972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b88555555555%3A0xcc35e772ffdbe14b!2sCorendon%20Playa%20Kemer%20(Ex.%20Grand%20Park%20Kemer)!5e0!3m2!1sru!2sua!4v1636031807048!5m2!1sru!2sua"
+                    width="250" height="150" style="border: 2px;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+
+        <!-- End hotel-three -->
+
+        <div id="hotel-four">
+            <div class="background">
+                <h2>Pirates Beach Club, 5</h2>
+                <p class="image-size"><img itemprop="image" src="imgs/pirats.jpg" alt="hotel photo"></p>
+            </div>
+            <span itemprop="inovator">Мусса Ибрахим</span><br>
+            <span itemprop="company">Pirates Beach Club, 5</span><br>
+            <span itemprop="year">1999</span><br>
+            <article itemprop="description">
+                Отель расположен в 1 км от центра п. Текирова, в 70 км от аэропорта Анталии.
+                <!--  ОБЩЕЕ ОПИСАНИЕ -->
+                Отель Клубного типа 1ого Класса. Территория 36.000 Кв.М.
+                Период Работы: Апрель - Ноябрь
+                <!-- Количество и типы номеров:
+                268 номеров, из них 260 стандартных (25 м2,макс. З+1 чел.), 8 сюит (45 м2, макс.3+1 чел.). Имеются
+                номера для инвалидов и для некурящих. 536 Спальных Mест -->
+                <span id="read-more-four" hidden>
+                    <!--  Описание номеров:
+                    Сплит-Cистема - Спутниковое Тв - Мини Бар
+                    Сейф - Балкон - Душ - Туалет - Тапочки
+                    Телефон - Фен
+                    Интернет
+                    Ковровое Покрытие
+                    Детский Манеж
+                    Все Номера Для Не Курящих
+                    2 Номера Для Людей С Ограниченными Физическими
+                    Возможностями
+                    Напряжение В Сети (220 Вв 50 hz)
+                    * Номеров с видом на море нет.
+                    В номерах Сьют предоставляется банный халат.
+                    Освобождение номера в день выезда из клуба в 12.00.
+                    Продление пребывания в номере платное, информация на ресепшн. -->
+                    Питание:
+                    Завтрак, поздний завтрак, обед, ужин - шведский стол. В течение дня Вам будут бесплатно
+                    предложены прохладительные, горячие и алкогольные напитки местного и импортного производства,
+                    а также в определенное время работают снэк-бары, закуски и поздний ужин
+                    К услугам
+                    гостей собственный песчано-галечный пляж, просторные стандартные и семейные номера
+                    с современным дизайном, СПА-центр, много площадок для проведения активного досуга
+                    как взрослых, так и детей. Для маленьких гостей отеля
+                    предлагаются туры на пиратском корабле. Отель отлично подойдет для семейного отдыха.
+                </span>
+            </article>
+            <div><input data-toggle-id="read-more-four" class="btn-read-more" type="text" placeholder="Узнать больше">
+            </div>
+            <button data-toggle-id="btn-four">4.Посмотреть на карте</button>
+            <div id="btn-four" hidden class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.0128885500335!2d30.53428731486341!3d36.50555098001031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b579a897119d%3A0xcc278b8b86783a3b!2sPirate&#39;s%20Beach%20Club!5e0!3m2!1sru!2sua!4v1636031899335!5m2!1sru!2sua"
+                    width="250" height="150" style="border:2px;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+
+        <!-- End hotel-four -->
+    </section>
+    <footer>
+     <!--    <div class="block-info"></div>
+        <div class="block-info"> </div>
+        <div class="block-info"></div>
+        <div class="block-info"></div>
+        <div class="block-info"></div> -->
+    </footer>
+
+</body>
+
+</html>

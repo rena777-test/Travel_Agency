@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 246, 246);
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+}
+
+h1{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2{
+    color: rgb(248, 35, 11);
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo-sun{
+    width: 100px;
+    border-radius: 50%;
+}
+
+#hotel-one,#hotel-two,#hotel-three,#hotel-four{
+    font-size: 14px;
+    margin: 5px;
+    color: #818589;
+}
+
+nav a{
+   text-decoration: none;
+   padding: 15px 0px 25px 0px;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: rgb(243, 103, 10);
+  /*  height: 20px; */
+   background-color: rgb(240, 207, 213);
+   margin: 5px;
+  
+}
+
+nav{
+    margin: 0px auto;
+    border-top: lightslategray solid 1px;
+    width: 80%;
+    border-right: lightslategray solid 1px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.background{
+    background-color: rgb(248, 236, 238);
+    padding-top: 1px;
+  text-align: center;
+}
+
+.image-size img{
+    width: 98%;
+    height: 170px;
+}
+
+section{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: stretch;
+}
+
+span{
+    margin: 10px 30px;
+}
+
+button{
+    margin: 10px;
+}
+
+article{
+    margin: 0 10px;
+ /*    border: 2px solid aquamarine; */
+    height: 333px;
+    font-size: 12px;
+}
+
+.btn-read-more{
+    width: 90px;
+    height: 15px;
+    margin:-10px 10px;
+    font-size: 10px;
+    border: 1px solid lightgrey;
+    color: lightgrey; 
+    cursor: pointer;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}  
+
+.block-info{
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightslategray;
+}
